@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{error_msg}}
+{% endblock %}
+
+{% block body %}
+   <h1>{{ error_msg | safe }}</h1> 
+   <div>
+    <a href="{% url 'index' %}">Home</a>
+    </div>
+{% endblock %}
